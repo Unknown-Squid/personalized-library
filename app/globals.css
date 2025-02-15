@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.checkbox:focus {
+  border: none;
+  outline: none;
+}
+
+.checkbox:checked {
+  right: 10px;
+}
+
+.checkbox:checked ~ .mainbox {
+  width: 50px;
+}
+
+.checkbox:checked ~ .mainbox .search_input {
+  width: 0;
+  height: 0px;
+}
+
+.checkbox:checked ~ .mainbox .iconContainer {
+  padding-right: 8px;
+}
+
+.checkbox {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 17px;
+  top: 10px;
+  z-index: 9;
+  cursor: pointer;
+  appearance: none;
+}
+
+.search_icon {
+  box-sizing: border-box;
+  fill: white;
+  font-size: 1.3em;
+}
