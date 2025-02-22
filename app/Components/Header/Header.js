@@ -10,7 +10,7 @@ function Header() {
   };
 
   return (
-    <header className="bg-black h-[120px] w-full flex flex-shrink-0">
+    <header className="bg-transparent h-[120px] w-full flex flex-shrink-0">
         <div className='w-[94%] h-full flex justify-end items-center gap-20'>
             <div className='size-fit flex gap-5 items-center justify-center mt-5'>
                 <div className="relative w-fit">
@@ -38,12 +38,12 @@ function Header() {
                         />
                     </div>
                 </div>
-                <p className='text-white text-3xl'>My Library</p>
+                <p className='text-black text-3xl'>My Library</p>
             </div>
             <div className='flex items-center gap-5 h-[80%] size-fit'>
                 <div className='w-[80px] h-[80px] bg-white rounded-[100%]'>
                 </div>
-                <p className='text-white text-2xl mt-5'>Username</p>
+                <p className='text-black text-2xl mt-5'>Username</p>
             </div>
         </div>
     </header>

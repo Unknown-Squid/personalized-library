@@ -19,13 +19,16 @@ function TabsContentContainer({
   };
 
   return (
-    <div className='w-full min-h-full size-fit border-b-2 border-black flex-1 flex'>
+    <div className='w-full min-h-full size-fit border-b-2 border-black flex-1 pt-20 flex' 
+          style={{ boxShadow: 'inset 0px 20px 40px rgba(0, 0, 0, 0.6)' }}
+    >
+
       {containerProperties.map(container => {
         return (
           <div
             key={container.id}
             className={`min-h-full size-fit w-full pb-3 pt-3 text-3xl flex-wrap gap-20 justify-center
-                        ${container.background}
+                        bg-transparent
                         ${container.isActive ? "flex" : "hidden"}`}
           >
             {contentData.map(data => {

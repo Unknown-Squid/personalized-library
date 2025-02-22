@@ -4,14 +4,14 @@ function TabsButton({
 }) {
 
   return (
-    <div className='w-full h-[100px] flex items-end gap-5 ps-20'>
+    <div className="w-full size-fit flex items-end gap-5 ps-20 bg-transparent pb-1">
         {tabProperties.map(tab => {
             return (
                 <button 
                     key={tab.id} 
                     type="button" 
                     className={`h-[80%] w-[12%] sm:w-[10%] md:w-[8%] pb-[5px] bg-black flex items-end justify-center bg-transparent text-base sm:text-2xl md:text-2xl lg:text-3xl 
-                                ${tab.isActive ? "border-b-2 border-black text-red-500" : "border-0 text-black/[.4]"}`
+                                ${tab.isActive ? "border-b-4 border-black text-black" : "border-0 text-black/[.6]"}`
                               }
                     onClick={() => tabOnClick(tab.id)}
                 >

@@ -60,9 +60,15 @@ export default function Home() {
 
 
   return (
-    <div className="items-center justify-items-center flex flex-col w-screen size-fit p-0 bg-white">
+    <div 
+      className="items-center justify-items-center flex flex-col w-screen size-fit p-0 bg-white"
+      style={{ backgroundImage: "url('/background/wooden background.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
+    >
       <Header/>
-      <main className="min-h-[80%] size-fit w-full border-2 border-black flex flex-col">
+      <main 
+        className="min-h-[80%] size-fit w-full flex flex-col"
+      >
+
         <TabsButton
           tabProperties={tabsLabel}
           tabOnClick={changeActiveTab}
